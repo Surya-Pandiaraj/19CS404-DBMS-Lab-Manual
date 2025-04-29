@@ -209,4 +209,5 @@ The relationships such as TREATED BY, BY, FOR, HANDLES, TREATS, and MEDICATION w
 
 Some assumptions were made to simplify the model: for example, each appointment involves only one patient and one doctor (no group consultations), each department has one head (HANDLE relationship is one-to-one), and a patient can have multiple appointments and prescriptions. These assumptions keep the database design straightforward, scalable, and easy to manage while covering the basic operations of a hospital.
 
-## RESULT
+## RESULT:
+Thus the ER Diagram for the Hospital Database has been drawn successfully.
