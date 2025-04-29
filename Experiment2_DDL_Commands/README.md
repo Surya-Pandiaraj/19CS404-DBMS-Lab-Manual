@@ -105,51 +105,77 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+-- ![image](https://github.com/user-attachments/assets/bc6f6af1-fbb9-435f-89de-d52157dd57f5)
+
 
 ```sql
--- Paste your SQL code below for Question 1
+insert into Products(Name,Category,Price,Stock) values('Smartphone','Electronics',800,150),('Headphones','Accessories',200,300);
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/5b1ca3a5-04a7-4b9f-b4cb-f78193467890)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- ![image](https://github.com/user-attachments/assets/3a42018e-6f92-4ca1-a71f-196d95c05f1d)
+
 
 ```sql
--- Paste your SQL code below for Question 2
+-- create table item(
+item_id TEXT primary key,
+item_desc TEXT not null,
+rate INTEGER not null,
+icom_id TEXT(4),
+foreign key (icom_id) references company (com_id) on update set null on delete set null);
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/415862ba-5585-4250-9334-f33432f9ba32)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+-- ![image](https://github.com/user-attachments/assets/f534be86-f09f-4fc5-84c7-7636480ff637)
+
 
 ```sql
--- Paste your SQL code below for Question 3
+-- create table Products(
+ProductID int primary key,
+ProductName text not null,
+Price real,
+Stock int,
+check(Price>0),
+check(Stock>=0));
 ```
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/41a9b76e-11d8-4e02-932e-4a80e1a056cc)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- ![image](https://github.com/user-attachments/assets/ed864134-23f6-418d-b337-243672210a2a)
+
+
 
 ```sql
--- Paste your SQL code below for Question 4
+create table Attendance(
+AttendanceID INTEGER primary key,
+EmployeeID INTEGER,
+AttendanceDate DATE,
+Status TEXT,
+check(Status in ('Present','Absent','Leave')),
+foreign key(EmployeeID) references Employees(EmployeeID));
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/c11c1746-c8fe-486a-8534-363d0de39d38)
+
 
 **Question 5**
 ---
