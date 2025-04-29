@@ -179,75 +179,88 @@ foreign key(EmployeeID) references Employees(EmployeeID));
 
 **Question 5**
 ---
--- Paste Question 5 here
+-- ![image](https://github.com/user-attachments/assets/4aa9e9db-66f1-4c8c-a5eb-00a95cab7e38)
+
 
 ```sql
--- Paste your SQL code below for Question 5
+-- insert into Products(ProductID,Name,Category,Price,Stock)
+values(101,'Laptop','Electronics',1500,50);
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/48253236-69d4-42ef-b69e-8a1433ce0941)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- ![image](https://github.com/user-attachments/assets/d18b1840-dac9-4a72-9609-513af975f2b3)
+
 
 ```sql
--- Paste your SQL code below for Question 6
+-- alter table Student_details
+add column ParentsNumber number;
+alter table Student_details
+add column Adhar_Number number;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/3a7d27ca-e014-40a1-853e-4de06457b1b1)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- ![image](https://github.com/user-attachments/assets/04a4d3cc-c44a-4129-8687-24e203d59dcb)
+
 
 ```sql
--- Paste your SQL code below for Question 7
+-- create table Invoices(
+InvoiceID int primary key,
+InvoiceDate date,
+Amount real,
+DueDate date,
+OrderID int,
+check (amount>0),
+check (DueDate>InvoiceDate),
+foreign key (OrderID)references Orders(OrderID));
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/0ea83df4-6b5e-4a85-a384-24bb8541f877)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- ![image](https://github.com/user-attachments/assets/56f83ce6-c560-410d-bce1-285ce94a4479)
+
 
 ```sql
--- Paste your SQL code below for Question 8
+-- create table Customers(
+CustomerID INTEGER,
+Name TEXT,
+Email TEXT,
+JoinDate DATETIME);
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/6dba59b3-bca1-4f06-83ae-91b7895823f1)
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- ![image](https://github.com/user-attachments/assets/6b02a17f-22d7-4ee7-a149-ba6654800a58)
 
 ```sql
--- Paste your SQL code below for Question 9
+-- insert into Student_details select * from Archived_students;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/8475d606-103c-4772-b897-a3d1ba82756f)
 
-**Question 10**
----
--- Paste Question 10 here
 
-```sql
--- Paste your SQL code below for Question 10
-```
-
-**Output:**
-
-![Output10](output.png)
 
 
 ## RESULT
